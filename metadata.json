@@ -1,0 +1,6 @@
+{
+  "name": "Aether Strike: Cosmic Fleet",
+  "description": "Multiplayer space idle shooter with upgradeable starships, procedural enemy waves, and epic boss encounters.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

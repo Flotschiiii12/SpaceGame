@@ -1,0 +1,254 @@
+@import "tailwindcss";
+
+@layer utilities {
+  /* ============================================================================
+     CALM OBSIDIAN-GLASS PANELS (60-30-10 Sci-Fi Aesthetic, Zero Stretched PNGs)
+     ============================================================================ */
+  .ai-panel-cyan {
+    background: linear-gradient(165deg, rgba(8, 22, 38, 0.88) 0%, rgba(5, 11, 22, 0.94) 100%);
+    border: 1px solid rgba(34, 211, 238, 0.28);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.55), inset 0 1px 0 rgba(165, 243, 252, 0.14);
+    border-radius: 0.875rem;
+    backdrop-filter: blur(12px);
+  }
+  .ai-panel-amber {
+    background: linear-gradient(165deg, rgba(32, 20, 9, 0.88) 0%, rgba(10, 11, 20, 0.94) 100%);
+    border: 1px solid rgba(245, 158, 11, 0.3);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.55), inset 0 1px 0 rgba(253, 230, 138, 0.14);
+    border-radius: 0.875rem;
+    backdrop-filter: blur(12px);
+  }
+  .ai-panel-purple {
+    background: linear-gradient(165deg, rgba(25, 13, 38, 0.88) 0%, rgba(8, 10, 22, 0.94) 100%);
+    border: 1px solid rgba(168, 85, 247, 0.3);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.55), inset 0 1px 0 rgba(233, 213, 255, 0.14);
+    border-radius: 0.875rem;
+    backdrop-filter: blur(12px);
+  }
+  .ai-panel-rose {
+    background: linear-gradient(165deg, rgba(36, 11, 21, 0.88) 0%, rgba(10, 10, 20, 0.94) 100%);
+    border: 1px solid rgba(244, 63, 94, 0.32);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.55), inset 0 1px 0 rgba(254, 205, 211, 0.14);
+    border-radius: 0.875rem;
+    backdrop-filter: blur(12px);
+  }
+  .ai-panel-emerald {
+    background: linear-gradient(165deg, rgba(8, 29, 24, 0.88) 0%, rgba(6, 12, 20, 0.94) 100%);
+    border: 1px solid rgba(16, 185, 129, 0.3);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.55), inset 0 1px 0 rgba(167, 243, 208, 0.14);
+    border-radius: 0.875rem;
+    backdrop-filter: blur(12px);
+  }
+  .ai-panel-slate {
+    background: linear-gradient(165deg, rgba(15, 23, 42, 0.82) 0%, rgba(7, 11, 21, 0.92) 100%);
+    border: 1px solid rgba(71, 85, 105, 0.36);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.45), inset 0 1px 0 rgba(255, 255, 255, 0.05);
+    border-radius: 0.75rem;
+    backdrop-filter: blur(10px);
+  }
+
+  /* ============================================================================
+     HUD CONSOLE SURFACES (Clean Translucent Cockpit Bars)
+     ============================================================================ */
+  .ai-hud-top {
+    background: linear-gradient(180deg, rgba(6, 11, 23, 0.92) 0%, rgba(9, 16, 32, 0.86) 100%);
+    border: 1px solid rgba(56, 189, 248, 0.24);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.65), inset 0 1px 0 rgba(186, 230, 253, 0.1);
+    border-radius: 0.875rem;
+    backdrop-filter: blur(12px);
+  }
+  .ai-hud-vitals {
+    background: linear-gradient(180deg, #070d1d 0%, #040812 100%);
+    border: 1px solid rgba(56, 189, 248, 0.32);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.85), inset 0 1px 0 rgba(186, 230, 253, 0.12);
+    border-radius: 0.875rem;
+  }
+  .ai-hud-nav {
+    background: linear-gradient(0deg, #040812 0%, #080e1f 100%);
+    border-top: 1px solid rgba(56, 189, 248, 0.3);
+    box-shadow: 0 -6px 24px rgba(0, 0, 0, 0.85);
+  }
+  .ai-hud-boss {
+    background: linear-gradient(90deg, #2d0915 0%, #1a0610 100%);
+    border: 1px solid rgba(244, 63, 94, 0.55);
+    box-shadow: 0 6px 20px rgba(244, 63, 94, 0.25), inset 0 1px 0 rgba(254, 205, 211, 0.15);
+    border-radius: 0.875rem;
+  }
+
+  /* ============================================================================
+     TACTILE BUTTONS & METRIC CAPSULES (Crisp Borders, Never Stretched)
+     ============================================================================ */
+  .ai-btn-cyan {
+    background: #071d30;
+    border: 1px solid rgba(34, 211, 238, 0.36);
+    border-radius: 0.625rem;
+  }
+  .ai-btn-active-cyan,
+  .ai-btn-cyan-active {
+    background: linear-gradient(180deg, #0e7490 0%, #083344 100%);
+    border: 1px solid rgba(103, 232, 249, 0.75);
+    box-shadow: 0 0 14px rgba(34, 211, 238, 0.28), inset 0 1px 0 rgba(207, 250, 254, 0.25);
+    border-radius: 0.625rem;
+  }
+
+  .ai-btn-amber {
+    background: #291706;
+    border: 1px solid rgba(245, 158, 11, 0.4);
+    border-radius: 0.625rem;
+  }
+  .ai-btn-active-amber,
+  .ai-btn-amber-active {
+    background: linear-gradient(180deg, #b45309 0%, #78350f 100%);
+    border: 1px solid rgba(252, 211, 77, 0.75);
+    box-shadow: 0 0 14px rgba(245, 158, 11, 0.28), inset 0 1px 0 rgba(254, 243, 199, 0.25);
+    border-radius: 0.625rem;
+  }
+
+  .ai-btn-purple {
+    background: #210e36;
+    border: 1px solid rgba(168, 85, 247, 0.4);
+    border-radius: 0.625rem;
+  }
+  .ai-btn-active-purple,
+  .ai-btn-purple-active {
+    background: linear-gradient(180deg, #6b21a8 0%, #3b0764 100%);
+    border: 1px solid rgba(216, 180, 254, 0.75);
+    box-shadow: 0 0 14px rgba(168, 85, 247, 0.28), inset 0 1px 0 rgba(243, 232, 255, 0.25);
+    border-radius: 0.625rem;
+  }
+
+  .ai-btn-rose {
+    background: #2c0b16;
+    border: 1px solid rgba(244, 63, 94, 0.4);
+    border-radius: 0.625rem;
+  }
+  .ai-btn-active-rose,
+  .ai-btn-rose-active {
+    background: linear-gradient(180deg, #9f1239 0%, #4c0519 100%);
+    border: 1px solid rgba(253, 164, 175, 0.75);
+    box-shadow: 0 0 14px rgba(244, 63, 94, 0.28), inset 0 1px 0 rgba(255, 228, 230, 0.25);
+    border-radius: 0.625rem;
+  }
+
+  .ai-btn-emerald {
+    background: #06251d;
+    border: 1px solid rgba(16, 185, 129, 0.4);
+    border-radius: 0.625rem;
+  }
+  .ai-btn-active-emerald,
+  .ai-btn-emerald-active {
+    background: linear-gradient(180deg, #047857 0%, #064e3b 100%);
+    border: 1px solid rgba(110, 231, 183, 0.75);
+    box-shadow: 0 0 14px rgba(16, 185, 129, 0.28), inset 0 1px 0 rgba(209, 250, 229, 0.25);
+    border-radius: 0.625rem;
+  }
+
+  .ai-btn-slate {
+    background: #0b1120;
+    border: 1px solid rgba(71, 85, 105, 0.55);
+    border-radius: 0.625rem;
+  }
+
+  /* ============================================================================
+     100% OPAQUE OBSIDIAN THUMB ACTUATOR SOCKETS (Zero Bleed-Through!)
+     ============================================================================ */
+  .ai-thumb-cyan {
+    background: linear-gradient(180deg, #091c32 0%, #050c18 100%);
+    border: 1px solid rgba(34, 211, 238, 0.45);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.85);
+    border-radius: 0.75rem;
+  }
+  .ai-thumb-active-cyan {
+    background: linear-gradient(180deg, #0d5068 0%, #072638 100%);
+    border: 1px solid rgba(103, 232, 249, 0.88);
+    box-shadow: 0 0 14px rgba(34, 211, 238, 0.35), inset 0 1px 0 rgba(207, 250, 254, 0.28);
+    border-radius: 0.75rem;
+  }
+
+  .ai-thumb-amber {
+    background: linear-gradient(180deg, #281706 0%, #120b05 100%);
+    border: 1px solid rgba(245, 158, 11, 0.48);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.85);
+    border-radius: 0.75rem;
+  }
+  .ai-thumb-active-amber {
+    background: linear-gradient(180deg, #863b0d 0%, #451b06 100%);
+    border: 1px solid rgba(252, 211, 77, 0.88);
+    box-shadow: 0 0 14px rgba(245, 158, 11, 0.35), inset 0 1px 0 rgba(254, 243, 199, 0.28);
+    border-radius: 0.75rem;
+  }
+
+  .ai-thumb-rose {
+    background: linear-gradient(180deg, #2d0b17 0%, #14060c 100%);
+    border: 1px solid rgba(244, 63, 94, 0.48);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.85);
+    border-radius: 0.75rem;
+  }
+  .ai-thumb-active-rose {
+    background: linear-gradient(180deg, #7f1235 0%, #3d0719 100%);
+    border: 1px solid rgba(253, 164, 175, 0.88);
+    box-shadow: 0 0 14px rgba(244, 63, 94, 0.35), inset 0 1px 0 rgba(255, 228, 230, 0.28);
+    border-radius: 0.75rem;
+  }
+
+  .ai-thumb-purple {
+    background: linear-gradient(180deg, #220d36 0%, #0d0618 100%);
+    border: 1px solid rgba(168, 85, 247, 0.48);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.85);
+    border-radius: 0.75rem;
+  }
+  .ai-thumb-active-purple {
+    background: linear-gradient(180deg, #581c87 0%, #2e1065 100%);
+    border: 1px solid rgba(216, 180, 254, 0.88);
+    box-shadow: 0 0 14px rgba(168, 85, 247, 0.35), inset 0 1px 0 rgba(243, 232, 255, 0.28);
+    border-radius: 0.75rem;
+  }
+
+  .ai-thumb-slate {
+    background: linear-gradient(180deg, #0b1120 0%, #050914 100%);
+    border: 1px solid rgba(100, 116, 139, 0.55);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.9);
+    border-radius: 0.75rem;
+  }
+
+  /* ============================================================================
+     PLASMA GAUGE BARS & 3D DRYDOCK BAY
+     ============================================================================ */
+  .ai-bar-track {
+    background: rgba(2, 6, 16, 0.9);
+    border: 1px solid rgba(51, 65, 85, 0.65);
+    border-radius: 9999px;
+  }
+  .ai-bar-fill-cyan {
+    background: linear-gradient(90deg, #0891b2 0%, #22d3ee 60%, #a5f3fc 100%);
+    border-radius: 9999px;
+  }
+  .ai-bar-fill-emerald {
+    background: linear-gradient(90deg, #059669 0%, #10b981 60%, #6ee7b7 100%);
+    border-radius: 9999px;
+  }
+  .ai-bar-fill-amber {
+    background: linear-gradient(90deg, #d97706 0%, #f59e0b 60%, #fde68a 100%);
+    border-radius: 9999px;
+  }
+  .ai-bar-fill-rose {
+    background: linear-gradient(90deg, #e11d48 0%, #f43f5e 60%, #fda4af 100%);
+    border-radius: 9999px;
+  }
+  .ai-bar-fill-purple {
+    background: linear-gradient(90deg, #7e22ce 0%, #a855f7 60%, #e9d5ff 100%);
+    border-radius: 9999px;
+  }
+
+  .ai-drydock-bay {
+    background-image:
+      radial-gradient(circle at 50% 50%, rgba(6, 15, 32, 0.45) 0%, rgba(3, 7, 18, 0.88) 100%),
+      url('/assets/ui/drydock_bay_3d.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 1px solid rgba(56, 189, 248, 0.25);
+    border-radius: 0.875rem;
+    box-shadow: inset 0 0 32px rgba(0, 0, 0, 0.85);
+  }
+}
